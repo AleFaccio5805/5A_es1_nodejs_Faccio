@@ -20,4 +20,9 @@ var server = http.createServer(function(richiesta, risposta){
     let header = {"Content-Typeb" : "text/plain"};
 
     risposta.writeHead(200, header);
+    
+    //Modifica del contenuto del pacchetto (posso richiamarlo più di una volta)
+    risposta.write("Hello World!");
+
+    risposta.end();
 });
