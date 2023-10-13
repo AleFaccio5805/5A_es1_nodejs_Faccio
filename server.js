@@ -26,3 +26,6 @@ var server = http.createServer(function(richiesta, risposta){
 
     risposta.end();
 });
+
+server.listen(1337);
+console.log("Il server è stato avviato sulla porta 1337");
